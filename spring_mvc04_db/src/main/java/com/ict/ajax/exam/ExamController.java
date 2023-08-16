@@ -90,13 +90,12 @@ public class ExamController {
 			// 자바에서 XML 파싱하는 방법 : DOM 방식, SAX 방식
 			// 2. SAX방식
 			SAXBuilder builder = new SAXBuilder();
-			org.jdom2.Document doc = builder.build(in);
-			org.jdom2.Element rootElement = doc.getRootElement();
-			org.jdom2.Element bodyElement = rootElement.getChild("weather");
-			org.jdom2.Element locals = bodyElement.getChild("local");
+			org.jdom2.Document document = builder.build(in);
+			org.jdom2.Element rootElement = document.getRootElement();
+			org.jdom2.Element weather = rootElement.getChild("weather");
 			
-			List<org.jdom2.Element> list = locals.getChildren("local");
-			for (org.jdom2.Element k : list) {
+			List<org.jdom2.Element> local = weather.getChildren();
+			for (org.jdom2.Element k : local) {
 				String loc = k.getName();
 				String ta = k.getAttributeValue("ta");
 				System.out.println("loc : " + loc +", ta : "+ ta);

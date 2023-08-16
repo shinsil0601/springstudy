@@ -187,6 +187,32 @@
 			<artifactId>spring-security-config</artifactId>
 			<version>5.3.13.RELEASE</version>
 		</dependency>
+		<!-- 이메일 인증 -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>5.3.18</version>
+		</dependency>
+		<!-- JavaMail 라이브러리 -->
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.2</version> <!-- 사용 가능한 최신 버전으로 업데이트 -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+		<!-- xml 파싱 -->
+		<!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom2</artifactId>
+			<version>2.0.6</version>
+		</dependency>
 
 
 	</dependencies>

@@ -5,6 +5,10 @@ public class KMA_VO {
 	// 원하는 요소를 변수로 만든다.
 	private String local, ta, desc, icon;
 	
+	public KMA_VO() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public KMA_VO(String local, String ta, String desc, String icon) {
 		this.local = local;
 		this.ta = ta;

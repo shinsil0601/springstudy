@@ -262,6 +262,12 @@ table{
 	function kakao_map04() {
 		location.href= "/kakaomap04.do";
 	}
+	function kakao_addr() {
+		location.href= "/kakaoaddr.do";
+	}
+	function transaction_go() {
+		location.href= "/transaction.do";
+	}
 </script>
 </head>
 <body>
@@ -283,6 +289,11 @@ table{
 	<button onclick="kakao_map02()">카카오 지도 연습 02</button>
 	<button onclick="kakao_map03()">카카오 지도 연습 03</button>
 	<button onclick="kakao_map04()">카카오 지도 연습 04</button>
+	<button onclick="kakao_addr()">다음 주소 API</button>
+	<button onclick="transaction_go()">트랜잭션</button>
+	<br><br>
+	<hr>
+	<a href="#"><img src=""></a>
 	<br><br>
 	<hr>
 	

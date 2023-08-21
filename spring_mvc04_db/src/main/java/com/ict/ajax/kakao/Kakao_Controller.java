@@ -135,6 +135,24 @@ public class Kakao_Controller {
 	public ModelAndView KakaoMap04() {
 		return new ModelAndView("kakao_map04");
 	}
+	@RequestMapping("/kakaoaddr.do")
+	public ModelAndView KakaoAddr() {
+		return new ModelAndView("kakao_addr");
+	}
+	@RequestMapping("/kakao_addr_ok.do")
+	public ModelAndView KakaoAddrOk(AddrVO addrVO) {
+		ModelAndView mv = new ModelAndView("redirect:/");
+		System.out.println(addrVO.getPostcode());
+		System.out.println(addrVO.getAddress());
+		if (addrVO.getDetailAddress() == null) {
+			System.out.println("상세 없음");
+		}else {
+			System.out.println(addrVO.getDetailAddress());
+		}
+		System.out.println(addrVO.getExtraAddress());
+		//DB처리, 기타 등등
+		return mv;
+	}
 	
 	
 }

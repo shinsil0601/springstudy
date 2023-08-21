@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="resources/css/summernote-lite.css">
 <style type="text/css">
 	a { text-decoration: none;}
-	table{width: 800px; border-collapse:collapse; text-align: center;}
+	table{width: 850px; border-collapse:collapse; text-align: center;}
 	table,th,td{border: 1px solid black; padding: 3px}
-	div{width: 800px; margin:auto; text-align: center;}
+	div{width: 850px; margin:auto; text-align: center;}
 	.note-btn-group{width: auto;}
 	.note-toolbar{width: auto;}
 </style>
